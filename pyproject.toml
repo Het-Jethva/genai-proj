@@ -1,0 +1,27 @@
+[project]
+name = "northbridge-guide"
+version = "1.0.0"
+description = "A grounded, synthetic-campus RAG assistant for a GenAI CCA submission."
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit>=1.39,<2.0",
+  "requests>=2.32,<3.0",
+]
+
+[project.optional-dependencies]
+dense = [
+  "sentence-transformers>=3.0,<4.0",
+]
+docs = [
+  "python-docx>=1.1,<2.0",
+  "reportlab>=4.0,<5.0",
+]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.8,<1.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

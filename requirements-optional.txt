@@ -1,0 +1,4 @@
+# Optional local dense retrieval. The app falls back to its deterministic
+# hybrid lexical/concept index when this package is not installed.
+# With uv, prefer: uv sync --extra dense
+sentence-transformers>=3.0,<4.0
